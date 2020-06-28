@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/Main/Main.css">
+    <link rel="stylesheet" href="/Main/popup.css">
+    <link rel="stylesheet" href="/Footer.css">
+    <link rel="stylesheet" href="/Main/MainResponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9ead223c11.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-2 col-xl-2 ">
+                <img id="logoImg" src="/Main/Images/mess.png" alt="MessPro Logo">
+            </div>
+            <div class="col-lg-7 col-md-12 col-12">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <input class="dropdown-toggle" type="text" id="areaSearch" data-toggle="dropdown" placeholder="Search Your Area Here">
+                        <ul class="dropdown-menu">
+                            <li id="l1"><a id="a1" href="#">Behari Coloney Satellite Town Jhang Sadar</a></li>
+                            <li id="l2"><a id="a2" href="#">Lahore</a></li>
+                            <li id="l3"><a id="a3" href="#">Faisalabad</a></li>
+                            <li id="l4"><a id="a4" href="#">Peshawar</a></li>
+                        </ul>
+                        <button class="buttonStyling fa fa-search" style="font-size: 25px;" id="searchButton"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-lg-3 col-xl-3 ">
+                <div class="row">
+                    <div class="col-lg-12" style="text-align: center;">
+                        <div class="row">
+                            <div id="user"><i class="fa fa-user" data-toggle="modal" data-target="#myModal2" id="userIcon"></i></div>
+                            <div id="bell"><i class="fa fa-bell" id="bellIcon"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row mt-1">
+                            <div class="col-sm-2"></div>
+                            <div class="col-lg-12 col-md-4 col-6"><button id="signIn" class="buttonStyling applyRadiusToButton" data-toggle="modal" data-target="#myModal2">Sign Up/In</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="myModal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="signUpHeading" class="display-4"><b>Sign Up</b></h1>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <label class="Label" for="email">Email <input class="form-control" type="email" name="" id="emailField"></label>
+                            <label class="Label" for="unField">User Name <input class="form-control" type="text" name="" id="unField"></label>
+                            <label class="Label" for="passField">Password <input class="form-control" type="password" name=""id="passField"></label>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="signUpHeading" class="display-4"><b>Sign In</b></h1>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <label class="Label" for="unField">User Name <input class="form-control" type="text" name="" id="unField"></label>
+                            <label class="Label" for="passField">Password <input class="form-control" type="password" name="" id="passField"></label>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Sign In</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="menuArea">
+        &nbsp
+        <div class="row" id="todayMessArea">
+            <div class="col-lg-1 col-md-2 col-sm-2"></div>
+            <div class="col-xl-5 col-lg-5 col-md-8 col-sm-8 col-12">
+                <img src="/Main/Images/mess.png" id="logoImage2" alt="">
+                <div id="todaysMenuArea">
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="ml-4 display-4">Mutton </h1>
+                            <hr>
+                            <h2 class="ml-4 text-danger">Karahi</h2>
+                        </div>
+                        <div class="col-6">
+                            <img src="/Main/Images/beef.jpg" id="messItem" class="mt-3" alt="">
+                        </div>
+                        <hr>
+                        <div class="ml-5" id="saman">
+                            <i class="fa fa-smile-beam mr-1 text-danger"></i>
+                            <p>Chapati</p>
+                            <p>3</p><br>
+                            <i class="fa fa-smile-beam mr-1 text-danger"></i>
+                            <p>Raita</p>
+                            <p> 1 Bowl</p><br>
+                            <i class="fa fa-smile-beam mr-1 text-danger"></i>
+                            <p>Karahi</p>
+                            <p> 1 Plate</p><br>
+                            <i class="fa fa-smile-beam mr-1 text-danger"></i>
+                            <p>Salad</p>
+                            <p> 1 Plate</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12">
+                <div id="setHeight"><img id="movingCar" src="/Main/Images/t.png" alt=""></div>
+                <button id="movingCarButton">Lets Have A Tour Towards Our Service!</button>
+
+                <div id="my-modal" class="modal">
+                    <div class="modal-content1">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8" id="modelHeading">
+                                <p class="display-4">Best Taste</p>
+                            </div>
+                            <div class="col-2"><span id="close">&times;</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-1">
+                                <button id="next" class="nextPrevious"><i class="fa fa-angle-left nextPreIcons"></i></button>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <img class="modelImage" src="/Main/Images/beef.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-1">
+                                <button id="previous" class="nextPrevious"><i class="fa fa-angle-right nextPreIcons"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp
+    </section>
+
+    <section id="bestContainer">
+        &nbsp
+        <div class="container mt-5 mb-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <p id="bestDishHeading">Best of all Time</p>
+                    <div id="bestDish">
+                        <div class="row">
+                            <div class="col-xl-6 col-6">
+                                <a href="/Card/Card.html" style="text-decoration: none; color:black;">
+                                    <div class="Card">
+                                        <img class="cardImage" src="/Main/Images/beef.jpg" alt="Avatar">
+                                        <div class="cardBody">
+                                            <p><b>Mutton Karahi</b></p>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star-half-alt carStarsColor"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/Card/Card.html" style="text-decoration: none; color:black;">
+                                    <div class="Card mt-1">
+                                        <img class="cardImage" src="/Main/Images/beef.jpg" alt="Avatar">
+                                        <div class="cardBody">
+                                            <p><b>Mutton Karahi</b></p>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star-half-alt carStarsColor"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-6 col-12">
+                                <a href="/Card/Card.html" style="text-decoration: none; color:black;">
+                                    <div class="Card">
+                                        <img class="cardImage" src="/Main/Images/beef.jpg" alt="Avatar">
+                                        <div class="cardBody">
+                                            <p><b>Mutton Karahi</b></p>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star-half-alt carStarsColor"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/Card/Card.html" style="text-decoration: none; color:black;">
+                                    <div class="Card mt-1">
+                                        <img class="cardImage" src="/Main/Images/beef.jpg" alt="Avatar">
+                                        <div class="cardBody">
+                                            <p><b>Mutton Karahi</b></p>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star carStarsColor"></i>
+                                            <i class="fa fa-star-half-alt carStarsColor"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" id="specialButtons">
+                    <div class="row">
+                        <div class="col-5">
+                            <a id="pageLink1" href="/Join/Join.html">
+                                <div class="circle ml-5"><b>Join</b>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a id="pageLink2" href="/Order/Order.html">
+                                <div class="circle ml-5"><b>Order</b></div>
+                            </a>
+                        </div>
+                        <div class="col-12"> <img id="mooch2" src="/Main/Images/mooch.png" alt=""> </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-3 col-md-4">
+                                    <a id="pageLink3" href="/Menu/Menu.html">
+                                        <div class="circle"><b>Menu</b></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12" id="setFavFoodBackground">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10"><input type="text" class="form-control mt-3" placeholder="search your favorite meal"></div>
+                    </div>
+                    <div class="row">
+                        <div class="mt-2" id="searchFavFood">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-1 col-md-3 col-sm-2 col-2"></div>
+                                <div class="col-xl-6 col-lg-8 col-md-6 col-sm-8 col-10">
+                                    <a href="/Card/Card.html" style="text-decoration: none; color:black;">
+                                        <div class="Card mt-2">
+                                            <img class="cardImage" src="/Main/Images/beef.jpg" alt="Avatar">
+                                            <div class="cardBody">
+                                                <p><b>Mutton Karahi</b></p>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star-half-alt carStarsColor"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="/Card/Card.html" style="text-decoration: none; color:black;">
+                                        <div class="Card mt-2">
+                                            <img class="cardImage" src="/Main/Images/beef.jpg" alt="Avatar">
+                                            <div class="cardBody">
+                                                <p><b>Mutton Karahi</b></p>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star-half-alt carStarsColor"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="/Card/Card.html" style="text-decoration: none; color:black;">
+                                        <div class="Card mt-2">
+                                            <img class="cardImage" src="/Main/Images/beef.jpg" alt="Avatar">
+                                            <div class="cardBody">
+                                                <p><b>Mutton Karahi</b></p>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star-half-alt carStarsColor"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="/Card/Card.html" style="text-decoration: none; color:black;">
+                                        <div class="Card mt-2">
+                                            <img class="cardImage" src="/Main/Images/beef.jpg" alt="Avatar">
+                                            <div class="cardBody">
+                                                <p><b>Mutton Karahi</b></p>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star carStarsColor"></i>
+                                                <i class="fa fa-star-half-alt carStarsColor"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp
+    </section>
+
+    <section class="container" id="commentSection">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <h4>
+                    <li class="fa fa-comments mr-3"></li>Any Review For MessBro?
+                </h4>
+                <textarea class="form-control" id="comment" placeholder="Write Some Of Your Reviews"></textarea>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12" id="reviewsSection">
+                <h4>Comments</h4>
+                <div class="reviews">
+                    <div class="row">
+                        <div class="give20PercentWidth">
+                            <img src="/Main/Images/pp.jpg" id="adjustProfileIcon" alt="">
+                        </div>
+                        <div class="give75PercentWidth">
+                            <div class="adjustPara">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eius deserunt quia laborum assumenda animi doloribus porro corporis facere dolorum. Voluptatum velit nulla obcaecati maiores ipsam repellendus iusto numquamomnis.</p>
+                                <div class="row" id="commentIcons">
+                                    <i class="fa fa-reply hoverIcon"></i>
+                                    <i class="fa fa-comment-dots ml-4 hoverIcon"></i>
+                                    <i class="fa fa-heart ml-4 hoverIcon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  adjustHeight">
+                        <div class="give20PercentWidth">
+                            <img src="/Main/Images/pp.jpg" id="adjustProfileIcon" alt="">
+                        </div>
+                        <div class="give75PercentWidth">
+                            <div class="adjustPara">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eius deserunt quia laborum assumenda animi doloribus porro corporis facere dolorum. Voluptatum velit nulla obcaecati maiores ipsam repellendus iusto numquam
+                                    omnis.
+                                </p>
+                                <div class="row" id="commentIcons">
+                                    <i class="fa fa-reply hoverIcon"></i>
+                                    <i class="fa fa-comment-dots ml-4 hoverIcon"></i>
+                                    <i class="fa fa-heart ml-4 hoverIcon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  adjustHeight">
+                        <div class="give20PercentWidth">
+                            <img src="/Main/Images/pp.jpg" id="adjustProfileIcon" alt="">
+                        </div>
+                        <div class="give75PercentWidth">
+                            <div class="adjustPara">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eius deserunt quia laborum assumenda animi doloribus porro corporis facere dolorum. Voluptatum velit nulla obcaecati maiores ipsam repellendus iusto numquam
+                                    omnis.
+                                </p>
+                                <div class="row" id="commentIcons">
+                                    <i class="fa fa-reply hoverIcon"></i>
+                                    <i class="fa fa-comment-dots ml-4 hoverIcon"></i>
+                                    <i class="fa fa-heart ml-4 hoverIcon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="branches">
+        <div class="container">
+            <h1 class="display-4">Branches</h1>
+        </div>
+        <div id="countriesCardWarpper">
+            <div class="row">
+                <div class="col-10" id="countryMargin">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <a href="/Location/Location.html">
+                                <div class="countriesImage ">
+                                    <div class="countryVisit">
+                                        <i class="fa fa-drumstick-bite setIconColor"></i>
+                                        <i class="ml-3 fas fa-truck setIconColor"></i>
+                                        <i class="ml-3 fas fa-fighter-jet setIconColor"></i>
+                                    </div>
+                                    <button class="countryLabel">Lahore</button>
+                                </div>
+                            </a>
+                            <a href="/Location/Location.html">
+                                <div class="countriesImage ">
+                                    <div class="countryVisit">
+                                        <i class="fas fa-drumstick-bite setIconColor"></i>
+                                        <i class="ml-3 fas fa-truck setIconColor"></i>
+                                        <i class="ml-3 fas fa-fighter-jet setIconColor"></i>
+                                    </div>
+                                    <button class="countryLabel">Lahore</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <a href="/Location/Location.html">
+                                <div class="countriesImage ">
+                                    <div class="countryVisit">
+                                        <i class="fas fa-drumstick-bite setIconColor"></i>
+                                        <i class="ml-3 fas fa-truck setIconColor"></i>
+                                        <i class="ml-3 fas fa-fighter-jet setIconColor"></i>
+                                    </div>
+                                    <button class="countryLabel">Lahore</button>
+                                </div>
+                            </a>
+                            <a href="/Location/Location.html">
+                                <div class="countriesImage ">
+                                    <div class="countryVisit">
+                                        <i class="fas fa-drumstick-bite setIconColor"></i>
+                                        <i class="ml-3 fas fa-truck setIconColor"></i>
+                                        <i class="ml-3 fas fa-fighter-jet setIconColor"></i>
+                                    </div>
+                                    <button class="countryLabel">Lahore</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <a href="/Location/Location.html">
+                                <div class="countriesImage ">
+                                    <div class="countryVisit">
+                                        <i class="fas fa-drumstick-bite setIconColor"></i>
+                                        <i class="ml-3 fas fa-truck setIconColor"></i>
+                                        <i class="ml-3 fas fa-fighter-jet setIconColor"></i>
+                                    </div>
+                                    <button class="countryLabel">Lahore</button>
+                                </div>
+                            </a>
+                            <a href="/Location/Location.html">
+                                <div class="countriesImage ">
+                                    <div class="countryVisit">
+                                        <i class="fas fa-drumstick-bite setIconColor"></i>
+                                        <i class="ml-3 fas fa-truck setIconColor"></i>
+                                        <i class="ml-3 fas fa-fighter-jet setIconColor"></i>
+                                    </div>
+                                    <button class="countryLabel">Lahore</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                            <a href="/Location/Location.html">
+                                <div class="countriesImage ">
+                                    <div class="countryVisit">
+                                        <i class="fas fa-drumstick-bite setIconColor"></i>
+                                        <i class="ml-3 fas fa-truck setIconColor"></i>
+                                        <i class="ml-3 fas fa-fighter-jet setIconColor"></i>
+                                    </div>
+                                    <button class="countryLabel">Lahore</button>
+                                </div>
+                            </a>
+                            <a href="/Location/Location.html">
+                                <div class="countriesImage ">
+                                    <div class="countryVisit">
+                                        <i class="fas fa-drumstick-bite setIconColor"></i>
+                                        <i class="ml-3 fas fa-truck setIconColor"></i>
+                                        <i class="ml-3 fas fa-fighter-jet setIconColor"></i>
+                                    </div>
+                                    <button class="countryLabel">Lahore</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center ">
+        <p class=" display-4 mb-5">Why Choose Us</p>
+        <div class="row ">
+            <div class="col-lg-4 ">
+                <i class="fa fa-utensils setSize"></i>
+                <h1 class="display-4 ">Great Taste</h1>
+                <p class="addPadding ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo omnis magnam veniam aut voluptatibus fugit natus necessitatibus perspiciatis iusto qui. Repellendus quaerat sequi ad fugiat tenetur mollitia id earum aliquam.</p>
+            </div>
+            <div class="col-lg-4 ">
+                <i class="fa fa-heartbeat setSize"></i>
+                <h1 class="display-4 ">Healthy & Orgnic</h1>
+                <p class="addPadding ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo omnis magnam veniam aut voluptatibus fugit natus necessitatibus perspiciatis iusto qui. Repellendus quaerat sequi ad fugiat tenetur mollitia id earum aliquam.</p>
+            </div>
+            <div class="col-lg-4 ">
+                <i class="fa fa-truck setSize"></i>
+                <h1 class="display-4 ">Delivery On Time</h1>
+                <p class="addPadding ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo omnis magnam veniam aut voluptatibus fugit natus necessitatibus perspiciatis iusto qui. Repellendus quaerat sequi ad fugiat tenetur mollitia id earum aliquam.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-dark mt-5">
+        <footer>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="# ">Providing Mess</a></li>
+                            <li><a href="# ">Delivery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="# ">MessBro Related</a></li>
+                            <li><a href="# ">Team</a></li>
+                            <li><a href="# ">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text ">
+                        <h3>MessBro</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut illum sapiente laboriosam eius consequuntur, ipsa explicabo incidunt libero blanditiis. Dolorem laboriosam iste deserunt exercitationem expedita repellendus perspiciatis
+                            sint eum in!</p>
+                    </div>
+                    <div class="col item social ">
+                        <a href="# "><i class="fa fa-twitter"></i></a>
+                        <a href="# "><i class="fa fa-facebook "></i></a>
+                        <a href="# "><i class="fa fa-instagram"></i></a>
+                        <a href="# "><i class="fa fa-yahoo"></i></a>
+                    </div>
+                </div>
+                <p class="copyright ">MessBro © 2020</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const modal = document.querySelector('#my-modal');
+        const modalBtn = document.querySelector('#movingCarButton');
+        const closeBtn = document.querySelector('#close');
+
+        modalBtn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+        window.addEventListener('click', outsideClick);
+
+        function openModal() {
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function outsideClick(e) {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>

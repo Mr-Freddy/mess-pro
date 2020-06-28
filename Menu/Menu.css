@@ -1,0 +1,245 @@
+body {
+    overflow-x: hidden;
+}
+
+#cookImg {
+    /*to set the header back image in which someone is cooking*/
+    background-image: url(/Menu/Images/cook.jpg);
+    background-size: 1350px;
+}
+
+#applyGradientOnHeader {
+    background-image: linear-gradient(rgb(116, 70, 0), rgba(250, 159, 40, 0.534));
+    box-shadow: 1px 1px 30px 1px rgb(150, 72, 0);
+}
+
+#homeButton {
+    margin-top: 100px;
+    border: 1px solid black;
+    background-color: rgba(255, 228, 196, 0);
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#homeButton:hover {
+    background-color: rgba(236, 136, 6, 0.397);
+    box-shadow: 1px 1px 5px 0px rgb(0, 0, 0);
+}
+
+#homeButton:active {
+    box-shadow: 1px 1px 1px 0px rgb(0, 0, 0);
+}
+
+.healthyFoodMessage {
+    font-family: "Times New Roman";
+    font-size: 30px;
+    background-color: rgba(194, 194, 194, 0.589);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin-left: 150px;
+    margin-top: 20px;
+    height: 150px;
+    width: 200px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.msg {
+    width: 170px;
+    height: 114px;
+    margin-left: 15px;
+}
+
+#menuTitle {
+    width: 350px;
+}
+
+.backGround {
+    margin-top: 5%;
+    font-family: Castellar;
+    background-image: url(/Menu/Images/b.jpg);
+    background-size: 100%;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 10px black;
+}
+
+#alternativeButton {
+    background-color: rgba(172, 172, 172, 0.918);
+    margin-left: 465px;
+    margin-top: 60px;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#alternativeButton:hover {
+    background: rgba(54, 54, 54, 0);
+    color: white;
+    border: 1px solid red;
+}
+
+#alternativeButton:active {
+    box-shadow: 1px 1px 3px 1px rgb(255, 8, 0);
+}
+
+.menuItemContainer {
+    position: relative;
+    width: 25%;
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+    float: left
+}
+
+.menuItemContainer:hover div.front {
+    animation: twirl 0.2s 0.1s ease-in forwards;
+}
+
+.menuItemContainer:hover div.back {
+    animation: twirl 0.2s 0.1s ease-out forwards reverse;
+    border-radius: 50px;
+}
+
+.menuItemContainer:hover .button {
+    animation: moveButton 0.3s;
+    color: white;
+    background-color: rgba(36, 36, 36, 0.452);
+    border-radius: 3px;
+}
+
+@keyframes twirl {
+    0% {
+        transform: rotateY(0deg)
+    }
+    100% {
+        transform: rotateY(90deg);
+    }
+}
+
+@keyframes moveButton {
+    from {
+        transform: translateY(-120px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.cards {
+    background-color: rgba(240, 158, 64, 0.856);
+    margin-top: 50px;
+    height: 270px;
+    width: 270px;
+    border-radius: 200px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.back {
+    transform: rotateY(90deg);
+    box-shadow: 0px 1px 10px 2px white;
+}
+
+.front {
+    position: absolute;
+}
+
+.button {
+    transition: 0.1s;
+    border: none;
+    background-color: rgba(36, 36, 36, 0);
+    margin-top: 100px;
+    border-radius: 15px;
+    width: 100%;
+    height: 80px;
+    color: black;
+}
+
+.button:active {
+    font-size: 22px;
+}
+
+.btn1 {
+    font-size: 35px;
+}
+
+.btn2 {
+    font-size: 25px;
+}
+
+.btn2:hover {
+    transition: 0.1s;
+    font-size: 20px;
+    background-color: rgb(36, 36, 36);
+}
+
+.btn1:focus,
+.btn2:focus,
+#alternativeButton:focus,
+#homeButton:focus {
+    outline: none;
+}
+
+#monday {
+    background-image: url(/Menu/Images/beef.jpg);
+}
+
+#teusday {
+    background-image: url(/Menu/Images/dalChawal.jpg);
+}
+
+#wednesday {
+    background-image: url(/Menu/Images/shami.jpg);
+}
+
+#thursday {
+    background-image: url(/Menu/Images/mixSabzi.jpg);
+    background-size: 500px;
+}
+
+#friday {
+    background-image: url(/Menu/Images/sabziPlao.jpg);
+    background-size: 500px;
+}
+
+#saturday {
+    background-image: url(/Menu/Images/aloPalak.jpg);
+    background-size: 450px;
+}
+
+#sunday {
+    background-image: url(/Menu/Images/daalChicen.jpg);
+    background-size: 350px;
+}
+
+.hoverIcon:active {
+    box-shadow: 1px 1px 10px 1px rgb(255, 8, 0);
+}
+
+#saman {
+    margin-top: 4%;
+    width: 90%;
+    height: 88%;
+    border-radius: 10px;
+    background-color: white;
+    font-size: x-large;
+}
+
+#samanContainer {
+    margin-top: 10%;
+}
+
+
+/* box-shadow: 5px 5px 10px black; */

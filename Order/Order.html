@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Order</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/Order/Order.css">
+    <link rel="stylesheet" href="/Footer.css">
+    <link rel="stylesheet" href="/Main/popup.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img id="logo" src="/Order/Images/mess.png" alt="MessBro"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto flex-column-reverse flex-md-row">
+                    <li class="nav-item" role="presentation"><a href="/Main/Main.html"><button class="buttonStyling margin">Home</button></a></li>
+                    <li class="nav-item" role="presentation"><a href="/Menu/Menu.html"><button class="buttonStyling margin">Menu</button></a></li>
+                    <li class="nav-item" role="presentation"><a href="/Join/Join.html"><button class="buttonStyling margin">Join</button></a></li>
+                    <li class="nav-item" role="presentation"><i id="sigInUp" class="fa fa-user" data-toggle="modal" data-target="#myModal1"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- models -->
+
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="signUpHeading" class="display-4"><b>Sign In</b></h1>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <label class="Label" for="unField">User Name <input class="form-control" type="text" name="" id="unField"></label>
+                <label class="Label" for="passField">Password <input class="form-control" type="password" name="" id="passField"></label>
+                <div class="modal-footer">
+                    <button id="btn2" type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="signUpHeading" class="display-4"><b>Sign Up</b></h1>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <label class="Label" for="email">Email <input class="form-control" type="email" name=""id="emailField"></label>
+                <label class="Label" for="unField">User Name <input class="form-control" type="text" name="" id="unField"></label>
+                <label class="Label" for="passField">Password <input class="form-control" type="password" name="" id="passField"></label>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container containerMargin">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-9">
+                <div class="row">
+                    <button id="findButton"><i class="fa fa-globe" style="font-size: 30px;"></i></button>
+                    <input placeholder="searh your location here" id="locationInput" type="text">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container containerMargin">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <h4 class="display-4">Today's Menu</h4><i class="fas fa-utensils todayMessIcon"></i>
+                </div>
+                <h2 id="menuItemName"> Mutton Karahi</h2>
+            </div>
+        </div>
+        <div class=" row ">
+            <div class="col-lg-3 mt-2">
+                <div id="imageContainer">
+                    <button class="queyButton">Wanna see how we cook?</button>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h3 id="availableHeading">Available</h3>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <input class="mt-2" type="checkbox">
+                    </div>
+                    <div class="col-lg-7">
+                        <h5>Salan &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1/2 kg</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <input class="mt-2" type="checkbox">
+                    </div>
+                    <div class="col-lg-7">
+                        <h5>Chapati &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <input class="mt-2" type="checkbox">
+                    </div>
+                    <div class="col-lg-7">
+                        <h5>Raita &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1 Bowl</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <input class="choice" type="checkbox">
+                    </div>
+                    <div class="col-lg-7">
+                        <h5>Salad &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1 Plate</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <input class="choice" type="checkbox" checked disabled="disabled">
+                    </div>
+                    <div class="col-lg-7">
+                        <h5>Spices &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (Normal)</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <input class="choice" type="checkbox" checked disabled="disabled">
+                    </div>
+                    <div class="col-lg-7">
+                        <h5>Oil &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(Normal)</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 ">
+                <div class="row">
+                    <h3 id="extraHeading">Extra's</h3>
+                    <i class="fas fa-lemon extraIcon"></i>
+                    <i class="fas fa-glass-martini extraIcon"></i>
+                </div>
+                <div id="extra">
+                    <button class="extraItems mt-2">Other Roti's/Naan</button>
+                    <div class="content">
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <td>Khameeri Roti</td>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Khameeri Naan</td>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Rogni Naan</td>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="extraItems">Drinks</button>
+                    <div class="content">
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>0.5 Ltr</th>
+                                    <th>1.0 Ltr</th>
+                                    <th>1.5 Ltr</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Coca Cola</td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                                <tr>
+                                    <td>Sprite</td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                                <tr>
+                                    <td>Fanta</td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="extraItems">Sweet Dish</button>
+                    <div class="content">
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <td>Ice - Cream</td>
+                                    <td>1 Bowl</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kheer</td>
+                                    <td>1 Bowl</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gajar Ka Halwa</td>
+                                    <td>1 Bowl</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="extraItems">Extra  Spices</button>
+                    <div class="content">
+                        <table class="table table-condensed">
+                            <tbody>
+                                <tr>
+                                    <td>Namak</td>
+                                    <td>1/2 tsp</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mirch</td>
+                                    <td>1/2 tsp</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Garam Masala</td>
+                                    <td>1/2 tsp</td>
+                                    <td>
+                                        <div class="plusMinus"><button class="plusMinusButton">+</button><button class="plusMinusButton">-</button></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="reciept">
+            <h4 class="display-4">Order Details</h4>
+            <table id="recieptTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price of One</th>
+                        <th>Tax</th>
+                        <th>Delivery</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chapati</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>_</td>
+                        <td>30</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>Salan</td>
+                        <td>1 KG</td>
+                        <td>1000</td>
+                        <td>_</td>
+                        <td>30</td>
+                        <td>1030</td>
+                    </tr>
+                    <tr>
+                        <td>Ice Cream</td>
+                        <td>2 Bowl</td>
+                        <td>100</td>
+                        <td>_</td>
+                        <td>30</td>
+                        <td>230</td>
+                    </tr>
+                </tbody>
+            </table>
+            <label id="total" for="">1350</label>
+        </div>
+    </section>
+    <hr/>
+    <section class="container margin">
+        <div id="PaymentMethod">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <p class="lead">
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#">By Card</a>
+                            <a href="#">Cash On Delivery</a>
+                        </div>
+                        <button class="paymentHeading" onclick="openNav()">Select Payment Method <i class="fa fa-credit-card"> / <i class="fa fa-dollar-sign"></i></i></button>
+                    </p>
+                    <button id="confirmOrder" class="paymentHeading popup" data-toggle="modal" data-target="#order">Confirm Order <i class="fa fa-smile"></i></button>
+                    <!-- <button id="movingCarButton">Lets Have A Tour Towards Our Service!</button> -->
+
+                    <div id="my-modal" class="modal">
+                        <div class="modal-content1">
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-8" id="modelHeading">
+                                    <p class="display-4">Delievery Time : 8:00 PM</p>
+                                </div>
+                                <div class="col-2"><span id="close">&times;</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8">
+                                    <div class="modal-body" style="background-color: white;">
+                                        <h1>Custmer Detail</h1>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus incidunt iure ratione quia, minima neque hic officia sunt, a et sint voluptatibus quidem itaque voluptates. Pariatur error quia ad possimus!
+                                        <h1>Order Detail</h1>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus incidunt iure ratione quia, minima neque hic officia sunt, a et sint voluptatibus quidem itaque voluptates. Pariatur error quia ad possimus!
+                                        <h1>Delivery Detail</h1>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus incidunt iure ratione quia, minima neque hic officia sunt, a et sint voluptatibus quidem itaque voluptates. Pariatur error quia ad possimus!
+
+                                        <a href="/Main/Main.html">
+                                            <button class="buttonStyling " style="width:50%; margin-left:25%;">Home</button>
+                                        </a>
+                                    </div>
+                                    <a href="/Main/Main.html" style="text-decoration: none;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div id="otherDishes">
+            <h4 class="display-4 mb-5">Others available Dishes</h4>
+            <div class="row ">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 " id="card1 ">
+                    <a href="/Card/Card.html" style="text-decoration: none;">
+                        <div class="card ">
+                            <img class="card-img-top" src="/Order/Images/beef.jpg" alt="Hello">
+                            <div class="card-body">
+                                <h4 class="card-title"> Mutton Karahi</h4>
+                                <p class="card-text"> Jumbo Deal</p>
+                                <a href="#" class="btn btn-danger">CheckOut</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 " id="card2 ">
+                    <a href="/Card/Card.html" style="text-decoration: none;">
+                        <div class="card ">
+                            <img class="card-img-top" src="/Order/Images/beef.jpg" alt="Hello">
+                            <div class="card-body">
+                                <h4 class="card-title"> Mutton Karahi</h4>
+                                <p class="card-text"> Jumbo Deal</p>
+                                <a href="#" class="btn btn-danger">CheckOut</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 " id="card3 ">
+                    <a href="/Card/Card.html" style="text-decoration: none;">
+                        <div class="card ">
+                            <img class="card-img-top" src="/Order/Images/beef.jpg" alt="Hello">
+                            <div class="card-body">
+                                <h4 class="card-title"> Mutton Karahi</h4>
+                                <p class="card-text"> Jumbo Deal</p>
+                                <a href="#" class="btn btn-danger">CheckOut</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 " id="card4 ">
+                    <a href="/Card/Card.html" style="text-decoration: none;">
+                        <div class="card ">
+                            <img class="card-img-top" src="/Order/Images/beef.jpg" alt="Hello">
+                            <div class="card-body">
+                                <h4 class="card-title"> Mutton Karahi</h4>
+                                <p class="card-text"> Jumbo Deal</p>
+                                <a href="#" class="btn btn-danger">CheckOut</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-dark mt-5">
+        <footer>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="# ">Providing Mess</a></li>
+                            <li><a href="# ">Delivery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="# ">MessBro Related</a></li>
+                            <li><a href="# ">Team</a></li>
+                            <li><a href="# ">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text ">
+                        <h3>MessBro</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut illum sapiente laboriosam eius consequuntur, ipsa explicabo incidunt libero blanditiis. Dolorem laboriosam iste deserunt exercitationem expedita repellendus perspiciatis
+                            sint eum in!</p>
+                    </div>
+                    <div class="col item social ">
+                        <a href="# "><i class="fa fa-twitter"></i></a>
+                        <a href="# "><i class="fa fa-facebook "></i></a>
+                        <a href="# "><i class="fa fa-instagram"></i></a>
+                        <a href="# "><i class="fa fa-yahoo"></i></a>
+                    </div>
+                </div>
+                <p class="copyright ">MessBro © 2020</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        var coll = document.getElementsByClassName("extraItems");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+        const modal = document.querySelector('#my-modal');
+        const modalBtn = document.querySelector('.popup');
+        const closeBtn = document.querySelector('#close');
+
+        modalBtn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+        window.addEventListener('click', outsideClick);
+
+        function openModal() {
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function outsideClick(e) {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>

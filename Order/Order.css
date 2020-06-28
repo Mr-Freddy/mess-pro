@@ -1,0 +1,359 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-size: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgba(241, 241, 241, 0.555);
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    background-color: rgb(241, 241, 241);
+}
+
+li {
+    width: 120px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 50%;
+}
+
+.buttonStyling {
+    border: none;
+    background-color: rgba(135, 207, 235, 0);
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#sigInUp {
+    transform: scale(4);
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+#sigInUp:hover {
+    color: rgb(235, 0, 39);
+}
+
+.marginForButton {
+    margin-top: 33px;
+}
+
+#findButton {
+    border: 1px solid rgb(138, 137, 137);
+    background-color: white;
+    color: rgb(235, 0, 39);
+    font-weight: bolder;
+    font-size: 20px;
+    width: 15%;
+    height: 50px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: hidden;
+}
+
+#locationInput {
+    border: 1px solid rgb(138, 137, 137);
+    background-color: rgba(88, 76, 76, 0);
+    color: rgb(75, 75, 75);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 10px;
+    height: 50px;
+    width: 70%;
+}
+
+.containerMargin {
+    margin-top: 100px;
+}
+
+.todayMessIcon {
+    margin-left: 20px;
+    font-size: 55px;
+    color: red;
+}
+
+#imageContainer {
+    background-image: url(/Order/Images/beef.jpg);
+    transition: 0.3s;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 170px;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+
+#imageContainer:hover {
+    background-size: 310px;
+    filter: grayscale(100%);
+}
+
+.queyButton {
+    visibility: hidden;
+    border: none;
+    height: 70px;
+    width: 230px;
+    margin-top: 60px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+
+.queyButton:active {
+    transition: 0.2s;
+    background-color: rgba(255, 0, 0, 0.911);
+}
+
+#imageContainer:hover .queyButton {
+    visibility: visible;
+    animation: moveButton 0.3s;
+}
+
+@keyframes moveButton {
+    from {
+        transform: scale(0) translateY(80px);
+    }
+    to {
+        transform: scale(1) translateY(0px);
+    }
+}
+
+.plusMinus {
+    width: 70px;
+    height: 32px;
+}
+
+.plusMinusButton {
+    width: 34px;
+    border: none;
+}
+
+#availableHeading,
+#menuItemName,
+#extraHeading {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.extraIcon {
+    margin-left: 20px;
+    transform: scale(1.5);
+    margin-top: 15px;
+    color: red;
+}
+
+#extra {
+    height: 200px;
+    width: 500px;
+    border-radius: 5px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.extraItems {
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.plusMinusButton:hover,
+.extraItems:hover {
+    background-color: rgb(230, 40, 40);
+    color: white
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#reciept {
+    margin-top: 100px;
+}
+
+#recieptTable tr td,
+#recieptTable tr th {
+    padding-left: 100px;
+    text-align: center;
+}
+
+#recieptTable tr th {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+#total {
+    margin-top: 30px;
+    margin-left: 1030px;
+    font-size: 30px;
+}
+
+#PaymentMethod {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.paymentHeading {
+    border: none;
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.buttonStyling:hover,
+#findButton:hover,
+.paymentHeading:hover {
+    border: none;
+    color: white;
+    background-color: rgb(235, 0, 39);
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+#locationInput:focus,
+.buttonStyling:focus,
+.plusMinusButton:focus,
+.collapseButton:focus,
+.extraItems:focus,
+.queyButton:focus,
+.paymentHeading:focus {
+    outline: none;
+}
+
+#todayMessImage:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.choice {
+    margin-top: 9px;
+    margin-right: 20px;
+}
+
+.marginLeft {
+    margin-left: 20px;
+}
+
+.active {
+    background-color: rgb(230, 40, 40);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.Label {
+    margin-left: 100px
+}
+
+#emailField,
+#unField,
+#passField {
+    width: 300px;
+}
+
+#confirmationModalBody {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    width: 336px;
+}
+
+#confirmationModalBody p {
+    font-size: 20px;
+}
+
+#otherDishes {
+    margin-bottom: 200px;
+}
+
+.pagination {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: rgb(230, 40, 40);
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}

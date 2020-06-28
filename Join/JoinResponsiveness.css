@@ -1,0 +1,120 @@
+@media screen and (max-width:1024px) and (min-width:769px) {
+    /*Ipad pro*/
+    #uploadCotainer {
+        margin-top: 33%;
+    }
+    .fontStyle {
+        font-size: 20px;
+    }
+    #checkBox1,
+    #checkBox8 {
+        margin-top: 10px;
+    }
+    .autoHieght {
+        height: 60px;
+    }
+    .rowMargin {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:414px) and (min-width:312px) {
+    /*i phone 6,7,8 plus*/
+    .fontStyle {
+        font-size: 15px;
+    }
+    #checkBox1,
+    #checkBox8 {
+        margin-top: 0px;
+    }
+    .buttonResponsiveMargin {
+        margin-left: 50px !important;
+        margin-bottom: 20px;
+    }
+    .responsiveSize {
+        width: 80%;
+        margin-left: 30px;
+    }
+    .rowMargin {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:360px) and (min-width:321px) {
+    /*Galaxy S5*/
+    .responsiveFloat {
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    /*i phone 5 SE*/
+    #uploadCotainer {
+        margin-top: 40%;
+    }
+    .buttonResponsiveMargin {
+        margin-left: 25px !important;
+        width: 300px;
+    }
+    .floatLeft {
+        float: right;
+        margin-right: 120px !important;
+    }
+    .responsiveFloat {
+        margin-right: 100px !important;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 376px) {
+    /*i pad,i phone 6,7,8 plus,Pixel 2 XL*/
+    #uploadCotainer {
+        margin-top: 29%;
+    }
+}
+
+@media screen and (max-width:375px) and (min-width:321px) {
+    /*i phone X,6,7,8,Galaxy S5*/
+    #uploadCotainer {
+        margin-top: 33%;
+    }
+}
+
+@media screen and (min-width:770px) {
+    #findButton {
+        width: 27%;
+    }
+    #locationInput {
+        width: 73%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .giveResponsiveMargin {
+        margin-top: 30px;
+    }
+    .autoHieght {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #profile {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #findButton {
+        width: 20%;
+    }
+    #locationInput {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 415px) {
+    /*i pad*/
+    .autoHieght {
+        height: 40px;
+    }
+}

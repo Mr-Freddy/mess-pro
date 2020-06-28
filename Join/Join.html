@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Join</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/Join/Join.css">
+    <link rel="stylesheet" href="/Footer.css">
+    <link rel="stylesheet" href="/Join/JoinResponsiveness.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img id="logo" src="/Order/Images/mess.png" alt="MessBro"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto flex-column-reverse flex-md-row">
+                    <li class="nav-item" role="presentation"><a href="/Main/Main.html"><button class="buttonStyling margin">Home</button></a></li>
+                    <li class="nav-item" role="presentation"><a href="/Menu/Menu.html"><button class="buttonStyling margin">Menu</button></a></li>
+                    <li class="nav-item" role="presentation"><a href="/Order/Order.html"><button class="buttonStyling margin">Order</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="profileContainer" class="container">
+        &nbsp
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-2 col-1"></div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-10" id="profile">
+                <div id="imageContainer">
+                    &nbsp;
+                    <div id="uploadCotainer">
+                        <button id="uploadButton"><i id="cameraIcon" class="fa fa-camera"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-1"></div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10 col-10">
+                <div class="row">
+                    <button id="findButton" for="locationInput" class="buttonStyling"><i class="fa fa-globe" style="font-size: 30px; color: rgb(235, 0, 39);"></i></button>
+                    <input placeholder="searh your location here" id="locationInput" type="text">
+                </div>
+            </div>
+        </div>
+        &nbsp
+    </section>
+
+    <section id="formContainer" class="container">
+        <p class="display-4 ml-5">Required Info</p>
+        &nbsp
+        <form action="/action_page.php">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-xl-5 col-lg-5 col-12">
+                        <div class="row">
+                            <div class="col-4"><label class="fontStyle" for="fullName">Full Name</label></div>
+                            <div class="col-8"><input id="fullName" class="inputField" placeholder="Enter you full name with cast" type=" text "></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-12">
+                        <div class="row ">
+                            <div class="col-4 giveResponsiveMargin"><label class="fontStyle" for="petName ">Pet Name</label></div>
+                            <div class="col-8 giveResponsiveMargin"><input id="petName " class="inputField" placeholder="By which you usually called" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row mt-5">
+                    <div class="col-lg-1 col-1"></div>
+                    <div class="col-xl-1 col-lg-1 col-2"><label class="fontStyle ml-4" for="age">Age</label></div>
+                    <div class="col-xl-1 col-lg-1 col-3"><input class="inputField" id="age" type="number"></div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-5 ">
+                        <div class="row">
+                            <div class="col-5"><label class="fontStyle ml-4" for="gender">Gender</label></div>
+                            <div class="col-7">
+                                <div>
+                                    <i class="fa fa-male genderIcon"></i>
+                                    <i class="fa fa-female genderIcon"></i>
+                                    <i class="fa fa-american-sign-language-interpreting genderIcon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 col-5 giveResponsiveMargin"><label class="fontStyle ml-4" for="occupation">Occupation</label></div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 giveResponsiveMargin">
+                        <div class="dropdown">
+                            <button class="buttonStyling dropdown-toggle ml-1" type="button" data-toggle="dropdown" style="border-color:rgb(128, 128, 128); background-color: white; color:rgb(128, 128, 128);">Occupation
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu" style="text-align: center;">
+                                <li><a style="text-decoration: none; color:rgb(128, 128, 128);" href="#">Student</a></li>
+                                <li><a style="text-decoration: none; color:rgb(128, 128, 128);" href="#">Worker</a></li>
+                                <li><a style="text-decoration: none; color:rgb(128, 128, 128);" href="#">Free</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-3 col-3"><label class="fontStyle ml-4" for="email">Email</label></div>
+                            <div class="col-lg-8 col-md-8 col-8"><input class="inputField ml-1" id="email" placeholder="abc@gamil.com" type="email" required></div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-4 col-md-3 col-3"><i class="fa fa-home addressIcon"></i></div>
+                            <div class="col-lg-8 col-md-8 col-8"><textarea class="inputField" id="address" placeholder="Please enter your current address in detail"></textarea></div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row ">
+                            <div class="col-4 giveResponsiveMargin"><label class="fontStyle ml-4" for="favMeal">Fav. Meal</label></div>
+                            <div class="col-7 giveResponsiveMargin"><input class="inputField ml-1" id="favMeal" placeholder="Enter your favorite food" type="email" required></div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <label class="fontStyle ml-4" for="contact1">Contact </label>
+                            </div>
+                            <div class="col-7"><input class="inputField ml-1" id="contact1" placeholder="First contact number" type="email" required></div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4"><label class="fontStyle ml-4" for="contact2">Contact</label></div>
+                            <div class="col-7"><input class="inputField ml-1" id="contact2" placeholder="Second contact number" type="email" required></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt-5">
+                <div class="row">
+                    <p class="display-4 ml-5">Decide Menu</p>
+                    <i class="fas fa-utensils headingIcon"></i>
+                </div>
+                <div>
+                    <ul class="ml-5">
+                        <li>
+                            <p class="text-danger">You can select the days on which you want to take mess</p>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10 col-12 DecidingMenu">
+                            <div class="formMargin">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-1 col-2"><input id="checkBox1" type="checkbox"> <br></div>
+                                    <div class="col-lg-2 col-md-2 col-8">
+                                        <p class="fontStyle floatLeft">Monday</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 col-12">
+                                        <div class="row buttonResponsiveMargin">
+                                            <div class="col-lg-0 "></div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Mutton Karahi</button></div>
+                                            <div class="col-2">
+                                                <div class="ml-2 mt-2" type="checkbox">OR</div>
+                                            </div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Chicken Karahi</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 col-12">
+                                        <div class="row">
+                                            <div class="col-lg-0 col-sm-2 col-1"></div>
+                                            <div class="col-lg-12  col-10"><input class="inputField remarks" placeholder="Remarks" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rowMargin">
+                                    <div class="col-lg-1 col-md-1 col-2"><input id="checkBox1" type="checkbox"> <br></div>
+                                    <div class="col-lg-2 col-md-2 col-8">
+                                        <p class="fontStyle floatLeft">Teusday</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 col-12">
+                                        <div class="row buttonResponsiveMargin">
+                                            <div class="col-lg-0 "></div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Daal Chawal</button></div>
+                                            <div class="col-2">
+                                                <div class="ml-2 mt-2" type="checkbox">OR</div>
+                                            </div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Alo Bhujia</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 col-12">
+                                        <div class="row">
+                                            <div class="col-lg-0 col-sm-2 col-1"></div>
+                                            <div class="col-lg-12  col-10"><input class="inputField remarks" placeholder="Remarks" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rowMargin">
+                                    <div class="col-lg-1 col-md-1 col-2"><input id="checkBox1" type="checkbox"> <br></div>
+                                    <div class="col-lg-2 col-md-2 col-8">
+                                        <p class="fontStyle floatLeft">Wednesday</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 col-12">
+                                        <div class="row buttonResponsiveMargin">
+                                            <div class="col-lg-0 "></div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Chicken Tiki</button></div>
+                                            <div class="col-2">
+                                                <div class="ml-2 mt-2" type="checkbox">OR</div>
+                                            </div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Alo Tiki</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 col-12">
+                                        <div class="row">
+                                            <div class="col-lg-0 col-sm-2 col-1"></div>
+                                            <div class="col-lg-12  col-10"><input class="inputField remarks" placeholder="Remarks" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rowMargin">
+                                    <div class="col-lg-1 col-md-1 col-2"><input id="checkBox1" type="checkbox"> <br></div>
+                                    <div class="col-lg-2 col-md-2 col-8">
+                                        <p class="fontStyle floatLeft">Thursday</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 col-12">
+                                        <div class="row buttonResponsiveMargin">
+                                            <div class="col-lg-0 "></div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Mix Sabzi</button></div>
+                                            <div class="col-2">
+                                                <div class="ml-2 mt-2" type="checkbox">OR</div>
+                                            </div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Daal Chana</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 col-12">
+                                        <div class="row">
+                                            <div class="col-lg-0 col-sm-2 col-1"></div>
+                                            <div class="col-lg-12  col-10"><input class="inputField remarks" placeholder="Remarks" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rowMargin">
+                                    <div class="col-lg-1 col-md-1 col-2"><input id="checkBox1" type="checkbox"> <br></div>
+                                    <div class="col-lg-2 col-md-2 col-8">
+                                        <p class="fontStyle floatLeft">Friday</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 col-12">
+                                        <div class="row buttonResponsiveMargin">
+                                            <div class="col-lg-0 "></div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Sabzi Pulao</button></div>
+                                            <div class="col-2">
+                                                <div class="ml-2 mt-2" type="checkbox">OR</div>
+                                            </div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Channa Pulao</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 col-12">
+                                        <div class="row">
+                                            <div class="col-lg-0 col-sm-2 col-1"></div>
+                                            <div class="col-lg-12  col-10"><input class="inputField remarks" placeholder="Remarks" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rowMargin">
+                                    <div class="col-lg-1 col-md-1 col-2"><input id="checkBox1" type="checkbox"> <br></div>
+                                    <div class="col-lg-2 col-md-2 col-8">
+                                        <p class="fontStyle floatLeft">Saturday</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 col-12">
+                                        <div class="row buttonResponsiveMargin">
+                                            <div class="col-lg-0 "></div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Alo Palak</button></div>
+                                            <div class="col-2">
+                                                <div class="ml-2 mt-2" type="checkbox">OR</div>
+                                            </div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Alo Bangan</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 col-12">
+                                        <div class="row">
+                                            <div class="col-lg-0 col-sm-2 col-1"></div>
+                                            <div class="col-lg-12  col-10"><input class="inputField remarks" placeholder="Remarks" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rowMargin">
+                                    <div class="col-lg-1 col-md-1 col-2"><input id="checkBox1" type="checkbox"> <br></div>
+                                    <div class="col-lg-2 col-md-2 col-8">
+                                        <p class="fontStyle floatLeft">Sunday</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 col-12">
+                                        <div class="row buttonResponsiveMargin">
+                                            <div class="col-lg-0 "></div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Chicken</button></div>
+                                            <div class="col-2">
+                                                <div class="ml-2 mt-2" type="checkbox">OR</div>
+                                            </div>
+                                            <div class="col-lg-5 col-4"><button data-toggle="modal" data-target="#myModal1" type="button" class="buttonStyling autoHieght">Chicken Qorma</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 col-12">
+                                        <div class="row">
+                                            <div class="col-lg-0 col-sm-2 col-1"></div>
+                                            <div class="col-lg-12  col-10"><input class="inputField remarks" placeholder="Remarks" type="text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="myModal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>Dish Name</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img id="menuDishImage" src="/Join/Images/beef.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul id="messItemsExtra">
+                                        <li>Chpati 3</li>
+                                        <li>Raita 1 Bowl</li>
+                                        <li>Salad 1 Plate</li>
+                                        <li>Spices Normal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mt-5">
+                    <div class="row">
+                        <p class="display-4 ml-5">Any Medical Problem?</p>
+                        <i class="fas fa-heartbeat headingIcon"></i>
+                    </div>
+                    <div>
+                        <ul class="ml-5">
+                            <li>
+                                <p class="text-danger">Describe your medical problem with any menu item breifly ( Problem like blood pressure , cholesterol etc )</p>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10" id="medicalProblem">
+                                <div class="formMargin">
+                                    <div class="row ">
+                                        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+                                            <input id="checkBox8" type="checkbox">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-8">
+                                            <p class="fontStyle floatLeft responsiveFloat">Monday</p>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                                            <input class="inputField responsiveSize" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row rowMargin">
+                                        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+                                            <input id="checkBox8" type="checkbox">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-8">
+                                            <p class="fontStyle floatLeft responsiveFloat">Teusday</p>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                                            <input class="inputField responsiveSize" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row rowMargin">
+                                        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+                                            <input id="checkBox8" type="checkbox">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-8">
+                                            <p class="fontStyle floatLeft responsiveFloat">Wednesday</p>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                                            <input class="inputField responsiveSize" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row rowMargin">
+                                        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+                                            <input id="checkBox8" type="checkbox">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-8">
+                                            <p class="fontStyle floatLeft responsiveFloat">Thursday</p>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                                            <input class="inputField responsiveSize" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row rowMargin">
+                                        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+                                            <input id="checkBox8" type="checkbox">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-8">
+                                            <p class="fontStyle floatLeft responsiveFloat">Friday</p>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                                            <input class="inputField responsiveSize" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row rowMargin">
+                                        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+                                            <input id="checkBox8" type="checkbox">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-8">
+                                            <p class="fontStyle floatLeft responsiveFloat">Saturday</p>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                                            <input class="inputField responsiveSize" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row rowMargin">
+                                        <div class="col-lg-1 col-md-2 col-sm-2 col-3">
+                                            <input id="checkBox8" type="checkbox">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-8">
+                                            <p class="fontStyle floatLeft responsiveFloat">Sunday</p>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                                            <input class="inputField responsiveSize" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="checkbox mt-5">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-10"><input type="checkbox"> I agree that all information which i provide now is true and there is no misleading
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <button type="submit" class="buttonStyling submitButton">Join Now</button>
+                    </div>
+                </div>
+        </form>
+    </section>
+
+    <div class="footer-dark mt-5">
+        <footer>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="# ">Providing Mess</a></li>
+                            <li><a href="# ">Delivery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="# ">MessBro Related</a></li>
+                            <li><a href="# ">Team</a></li>
+                            <li><a href="# ">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text ">
+                        <h3>MessBro</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut illum sapiente laboriosam eius consequuntur, ipsa explicabo incidunt libero blanditiis. Dolorem laboriosam iste deserunt exercitationem expedita repellendus perspiciatis
+                            sint eum in!</p>
+                    </div>
+                    <div class="col item social ">
+                        <a href="# "><i class="fa fa-twitter"></i></a>
+                        <a href="# "><i class="fa fa-facebook "></i></a>
+                        <a href="# "><i class="fa fa-instagram"></i></a>
+                        <a href="# "><i class="fa fa-yahoo"></i></a>
+                    </div>
+                </div>
+                <p class="copyright ">MessBro © 2020</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

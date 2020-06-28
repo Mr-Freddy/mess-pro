@@ -1,0 +1,149 @@
+@media screen and (max-width:1024px) {
+    /*Ipad pro*/
+    @keyframes moveCar {
+        from {
+            transform: translate(10px);
+        }
+        to {
+            transform: translate(150px);
+        }
+    }
+    #logoImage2 {
+        margin-left: 180px;
+    }
+    #mooch2 {
+        width: 220px;
+    }
+    #bestDish {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 200px;
+    }
+    #bestDishHeading {
+        font-size: 40px;
+    }
+    .Card {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /*i pad*/
+    #bell {
+        margin-top: 70px;
+        margin-left: 100px;
+    }
+    #user {
+        margin-top: 50px;
+    }
+    #movingCarButton {
+        height: 50%;
+        margin-top: 45px;
+        font-size: 30px;
+    }
+    @keyframes moveCar {
+        from {
+            transform: translate(10px);
+        }
+        to {
+            transform: translate(450px);
+        }
+    }
+    #setFavFoodBackground {
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    #mooch2 {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    /*i phone 6,7,8 plus*/
+    #logoImage2 {
+        width: 180px;
+    }
+    #movingCarButton {
+        height: 25%;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    @keyframes moveCar {
+        from {
+            transform: translate(10px);
+        }
+        to {
+            transform: translate(150px);
+        }
+    }
+    #setFavFoodBackground {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    #specialButtons {
+        margin-top: 40px;
+    }
+    #bestDish {
+        margin-left: 30px;
+    }
+    #bell {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    #user {
+        margin-top: 50px;
+    }
+    #signIn {
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+    #comment {
+        height: 300px;
+    }
+    #reviewsSection {
+        margin-top: 20px;
+    }
+    #countryMargin {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    /*i phone X,6,7,8*/
+    #logoImage2 {
+        width: 150px;
+    }
+    @keyframes moveCar {
+        from {
+            transform: translate(10px);
+        }
+        to {
+            transform: translate(120px);
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    /*Galaxy S5*/
+    #logoImage2 {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    /*i phone 5 SE*/
+    #logoImage2 {
+        width: 100px;
+    }
+    @keyframes moveCar {
+        from {
+            transform: translate(10px);
+        }
+        to {
+            transform: translate(80px);
+        }
+    }
+    #mooch2 {
+        width: 200px;
+    }
+}

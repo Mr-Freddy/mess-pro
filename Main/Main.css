@@ -1,0 +1,567 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*Adjusting Header*/
+
+header {
+    background-color: rgba(241, 241, 241, 0.555);
+    height: 100%;
+    width: 100%;
+}
+
+#logoImg {
+    /*Adjusting log image*/
+    margin-top: 30px;
+    margin-left: 45px;
+    max-width: 150px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 5px 1px rgb(223, 4, 4);
+}
+
+#areaSearch {
+    /*Setting the text field where we can find the area*/
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    height: 60%;
+    width: 80%;
+    margin-top: 51px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 10px;
+}
+
+#areaSearch:focus {
+    outline: none;
+}
+
+#l1,
+#l2,
+#l3,
+#l4 {
+    /*adjusting the size of the dropdown which comes when we click the input field (Location Finding field)*/
+    width: 510px;
+}
+
+#a1,
+#a2,
+#a3,
+#a4 {
+    /*Removing the underline from the links in drop downn*/
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+}
+
+#l1:hover #a1,
+#l2:hover #a2,
+#l3:hover #a3,
+#l4:hover #a4 {
+    /*When hover the links turn to red*/
+    color: red;
+}
+
+#searchButton {
+    /*Adjusting the search button so that it fits with the text field*/
+    margin-top: 51px;
+    float: right;
+    height: 60%;
+    width: 20%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: oldlace;
+    color: rgb(107, 107, 107);
+}
+
+#user {
+    /* background-color: red; */
+    height: 70px;
+    width: 67%
+}
+
+#userIcon {
+    transform: scale(4);
+    margin-top: 30px;
+    /* margin-left: 20px; */
+}
+
+#userIcon:hover {
+    cursor: pointer;
+    color: rgb(92, 92, 92);
+}
+
+#signIn {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#bell {
+    width: 15%;
+}
+
+#bellIcon {
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 20%;
+}
+
+#bellIcon:hover {
+    color: black;
+}
+
+.buttonStyling {
+    /*Common class to add styling on the buttons */
+    border: none;
+    background-color: rgba(206, 206, 206, 0);
+    border: 1px solid black;
+    margin-top: 1px;
+    height: 40px;
+}
+
+.buttonStyling:hover,
+#searchButton:hover {
+    /*when hover on the button it changes the look*/
+    color: white;
+    border: none;
+    background-color: rgb(235, 0, 39);
+}
+
+.applyRadiusToButton {
+    /*applying border radius to the every button where buttonStyling class is applied*/
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+/*Setting models attribute*/
+
+.Label {
+    margin-left: 100px
+}
+
+#emailField,
+#unField,
+#passField {
+    width: 300px;
+}
+
+
+/*Setting car movingCar button  and moving car*/
+
+#menuArea {
+    /*setting the background shadding and area of the fields*/
+    margin-top: 1%;
+    background-image: url(./Images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bestContainer,
+#menuArea {
+    background-color: rgb(238, 237, 237);
+    width: 90%;
+    margin: 5%;
+    border-radius: 5px;
+}
+
+#logoImage2 {
+    margin-left: 250px;
+    width: 200px;
+}
+
+#todayMessArea {
+    margin-top: 50px;
+}
+
+#todaysMenuArea {
+    /*setting the bounderies of the menu where -todays Mess- will going to be displayed*/
+    transition: 0.1s;
+    width: 100%;
+    height: 50%;
+    border: solid 1px rgba(0, 0, 0, 0.363);
+    border-radius: 3px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(204, 203, 204, 0.842);
+}
+
+#todaysMenuArea:hover {
+    transition: 0.1s;
+    border: solid 1px red;
+    box-shadow: 1px 1px 3px 1px rgb(255, 0, 0);
+}
+
+#messItem {
+    /*image of the mess item which is located inside the -todays mess- area*/
+    width: 100%;
+    border-radius: 50%;
+}
+
+#saman p {
+    /*to adjust the area of other things like chapati, raita etc in -todays mess- area*/
+    display: inline-block;
+    font-family: serif;
+    width: 100px;
+}
+
+#setHeight {
+    margin-top: 1%;
+    height: 37%;
+}
+
+#movingCar {
+    animation: moveCar 1s both infinite alternate-reverse;
+}
+
+@keyframes moveCar {
+    from {
+        transform: translate(10px);
+    }
+    to {
+        transform: translate(270px);
+    }
+}
+
+#movingCarButton {
+    /*setting the button below the moving car*/
+    border: none;
+    background-image: linear-gradient(to top right, rgb(204, 203, 204), rgba(255, 255, 255, 0.596));
+    color: rgb(218, 49, 49);
+    border-radius: 5px;
+    width: 90%;
+    height: 25%;
+    margin-left: 6%;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#movingCarButton:hover {
+    box-shadow: 1px 1px 5px 1px rgb(173, 173, 173);
+}
+
+#movingCarButton:active {
+    box-shadow: 1px 1px 10px 1px rgb(99, 98, 98);
+}
+
+#bestDish {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+#bestDishHeading {
+    font-size: 55px;
+    font-weight: lighter;
+}
+
+.Card {
+    /*setting up the food item body card*/
+    box-shadow: 0 4px 8px 0 rgba(116, 104, 104, 0.781);
+    transition: 0.2s;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.Card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Card:active {
+    box-shadow: 0 1px 1px 0 rgb(173, 173, 173);
+}
+
+.cardImage {
+    margin-top: 3px;
+    border-radius: 2px;
+    width: 100px;
+    float: left
+}
+
+.cardBody {
+    padding: 2px 16px;
+}
+
+.cardImage:hover {
+    transition: 0.1sss;
+    border-radius: 5px;
+}
+
+.carStarsColor {
+    color: rgb(255, 41, 41)
+}
+
+.circle {
+    /*setting the boundaries of the special buttons (join, menu, order)*/
+    text-align: center;
+    position: relative;
+    width: 100px;
+    padding: 50px 0;
+    font-size: 30px;
+    line-height: 0;
+    background: rgb(235, 0, 39);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.circle:hover {
+    box-shadow: 0 2px 5px 0 rgba(221, 0, 0, 0.637);
+}
+
+.circle:active {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.637);
+}
+
+#mooch2 {
+    /*setting the image between the special buttons (join, menu, order)*/
+    margin-left: 50px;
+    width: 250px;
+    height: 70px;
+}
+
+#pageLink3,
+#pageLink2,
+#pageLink1 {
+    /*removing the blue coloe and underline effect from the anchor tag which are around the special buttons (join, menu, order)*/
+    color: white;
+    text-decoration: none;
+}
+
+#setFavFoodBackground {
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: 300px;
+}
+
+#searchFavFood {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.favFoodCardMargin {
+    margin-left: 80px;
+}
+
+
+/*Setting Comment Section*/
+
+#commentSection {
+    /*giving margin to the comment section*/
+    margin-top: 150px;
+    text-align: center;
+}
+
+#comment {
+    /*setting the area of the comment text fiedl*/
+    background-color: rgba(231, 230, 230, 0.603);
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+#comment:hover {
+    box-shadow: 0px 0px 2px 1px rgb(151, 151, 151);
+}
+
+.reviews {
+    margin-top: 50px;
+    height: 200px;
+    min-height: 100px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#adjustProfileIcon {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 100px;
+}
+
+.adjustHeight {
+    margin-top: 30px;
+}
+
+.give20PercentWidth {
+    width: 20%;
+}
+
+.give75PercentWidth {
+    width: 75%;
+}
+
+.adjustPara {
+    padding: 20px;
+    margin-left: 20px;
+    text-align: left;
+    background-color: rgba(231, 230, 230, 0.603);
+    border-radius: 10px;
+}
+
+#commentIcons {
+    padding-left: 5%;
+    font-size: 180%;
+    color: rgb(148, 148, 148);
+}
+
+.hoverIcon:hover {
+    cursor: pointer;
+    color: rgb(82, 82, 82);
+}
+
+
+/*Setting the messBro branches section*/
+
+#branches {
+    /*giving 101% width to the braches section so that the vertical scroll bar of this section didn't visible to the use*/
+    margin-top: 100px;
+    width: 101%;
+    margin-bottom: 100px;
+}
+
+#countriesCardWarpper {
+    position: relative;
+    align-items: center;
+    margin-top: 100px;
+    height: 350px;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+    white-space: nowrap
+}
+
+#countryMargin {
+    margin-left: 50px;
+}
+
+.countriesImage {
+    transition: 0.3s;
+    margin-top: 50px;
+    margin-left: 70px;
+    background-image: url(/Main/Images/lahore.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    width: 250px;
+    height: 280px;
+    border-radius: 30px;
+}
+
+.countriesImage:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-size: 280px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.637);
+}
+
+.countryLabel {
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: white;
+    margin-top: 170px;
+    width: 251px;
+    background-color: rgba(66, 66, 66, 0.479);
+}
+
+.countriesImage:hover .countryLabel {
+    transition: 0.3s;
+    animation: moveButton 0.6s;
+    visibility: hidden;
+    border-radius: 100px;
+}
+
+@keyframes moveButton {
+    from {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0) translateY(-800px);
+        opacity: 0;
+    }
+}
+
+.countryVisit {
+    margin-top: 180px;
+    /* padding: 35px; */
+    padding-left: 35px;
+    padding-top: 20px;
+    font-size: 40px;
+    visibility: hidden;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.719);
+    float: right;
+    height: 100px;
+    width: 250px;
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.setIconColor {
+    color: rgba(255, 255, 255, 0.568);
+}
+
+.setIconColor:hover {
+    color: rgb(255, 255, 255);
+}
+
+.countriesImage:hover .countryVisit {
+    animation: moveArrowButton 0.3s;
+    visibility: visible;
+}
+
+@keyframes moveArrowButton {
+    from {
+        transform: scale(-1) translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+
+.setSize {
+    transform: scale(2.5);
+}
+
+.addPadding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.buttonMargin {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#inputSearch:focus,
+#movingCarButton:focus,
+.buttonStyling :focus,
+#searchButton:focus,
+.countryVisit:focus {
+    outline: none;
+}
+
+.btnMargin {
+    position: relative;
+    margin-left: 68px;
+    top: -75px;
+    left: 5px;
+}
+
+.signUpHeading {
+    margin-left: 150px;
+    margin-top: 20px;
+}

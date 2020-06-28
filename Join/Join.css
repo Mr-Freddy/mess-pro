@@ -1,0 +1,269 @@
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgba(241, 241, 241, 0.555);
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    background-color: rgb(241, 241, 241);
+}
+
+.navbar li {
+    width: 120px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 50%;
+}
+
+.buttonStyling {
+    border: none;
+    background-color: rgba(135, 207, 235, 0);
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#profile {
+    margin-left: 50px;
+    height: 200px;
+}
+
+#profileContainer {
+    margin-bottom: 20px;
+}
+
+#imageContainer {
+    background-image: url(/Join/Images/profile.png);
+    background-color: rgb(214, 211, 211);
+    background-size: 100%;
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    transition: 0.1s;
+    border-radius: 20px;
+}
+
+#imageContainer:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+#uploadCotainer {
+    margin-top: 37%;
+    width: 100%;
+    height: 50%;
+}
+
+#uploadButton {
+    background-color: rgba(0, 0, 0, 0.582);
+    height: 100%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#imageContainer:hover #uploadButton {
+    animation: moveButton 0.3s;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    visibility: visible;
+}
+
+#cameraIcon {
+    color: rgb(180, 180, 180);
+    font-size: 40px;
+}
+
+#cameraIcon:hover {
+    color: white;
+}
+
+#cameraIcon:active {
+    color: rgb(180, 180, 180);
+}
+
+#uploadButton:focus,
+.buttonStyling:focus,
+#locationInput:focus {
+    outline: none;
+}
+
+@keyframes moveButton {
+    from {
+        transform: translateY(-80px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#findButton {
+    width: 27%;
+    height: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#locationInput {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(88, 76, 76, 0);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: rgb(75, 75, 75);
+    padding: 10px;
+    height: 50px;
+    width: 73%;
+    border-left: hidden;
+}
+
+#formContainer,
+#profileContainer {
+    margin-top: 40px;
+    background-color: rgba(231, 231, 231, 0.404);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.buttonStyling:hover,
+#findButton:hover {
+    border: none;
+    color: white;
+    background-color: rgb(235, 0, 39);
+}
+
+.fontStyle {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    float: right;
+}
+
+.inputField {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border: 1px solid rgb(151, 151, 151);
+    height: 40px;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.genderIcon {
+    cursor: pointer;
+    margin-right: 25px;
+    transform: scale(2.3);
+}
+
+.genderIcon:hover,
+.genderIcon:focus {
+    color: red;
+}
+
+#address {
+    height: 110px;
+    resize: none;
+}
+
+.inputField:focus,
+#address:focus {
+    outline-color: #ff0800;
+}
+
+.addressIcon {
+    margin-top: 30px;
+    transform: scale(4);
+    margin-left: 120px;
+}
+
+.headingIcon {
+    margin-top: 50px;
+    margin-left: 5%;
+    transform: scale(4);
+}
+
+.margin {
+    margin-top: 33px;
+}
+
+.formMargin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.inputForm {
+    margin-top: 50px;
+}
+
+#decideMenu {
+    margin-left: 180px;
+    width: 150px;
+}
+
+.DecidingMenu,
+#medicalProblem {
+    background-color: rgb(235, 235, 235);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#checkBox1,
+#checkBox8 {
+    margin-left: 40px;
+    margin-top: 14px;
+    transform: scale(1.5);
+}
+
+.marginTopCheckbox {
+    margin-top: 33px;
+    margin-left: 40px;
+    transform: scale(1.5);
+}
+
+.floatLeft {
+    float: left;
+}
+
+.marginTop {
+    margin-top: 13px;
+}
+
+.marginTopOr {
+    margin-top: 5px;
+}
+
+#dishContainer {
+    position: flex;
+}
+
+#menuDishImage {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#messItemsExtra {
+    margin-top: 40px;
+}
+
+.submitButton {
+    height: 50px;
+    margin-bottom: 50px;
+}
